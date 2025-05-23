@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node.js App</title>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to my Node.js app!</h1>
+    <header>
+        <h1>Chatbot</h1>
+    </header>
+    <main>
+        <section class="chat-container">
+            <div class="chat-box">
+                <div class="chat-log">
+                    <div class="message">Welcome to the chatbot!</div>
+                </div>
+                <form class="chat-form">
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button id="chat-button">Send</button>
+                </form>
+            </div>
+            <div class="upload-container">
+                <input type="file" id="upload-input" multiple>
+                <button id="upload-button">Upload</button>
+                <button id="train-button">Train</button>
+                <div id="upload-status"></div>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
